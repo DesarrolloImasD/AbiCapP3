@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.camilodesarrollo.abicap.com.example.rene.abicap.Login">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/edUsuario"
+        android:layout_alignStart="@+id/edUsuario"
+        android:layout_marginTop="39dp"
+        android:id="@+id/edPass"
+        android:layout_alignEnd="@+id/edUsuario"
+        android:hint="Contraseña"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edUsuario"
+        android:textAlignment="center"
+        android:hint="Usuario"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPass"
+        android:layout_marginTop="51dp"
+        android:id="@+id/btnEntrar"
+        android:layout_alignStart="@+id/edPass"
+        android:layout_alignEnd="@+id/edPass"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:background="@drawable/botonverde" />
+
+    <Button
+        android:text="Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btnCancelar"
+        android:layout_below="@+id/btnEntrar"
+        android:layout_alignStart="@+id/btnEntrar"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignEnd="@+id/btnEntrar"
+        android:background="@drawable/botonrojo" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.camilodesarrollo.abicap.com.example.rene.abicap.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/abi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        android:id="@+id/btnUbicacion"
+        android:layout_marginTop="49dp"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por Barrido"
+        android:id="@+id/btnPorBarrido"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_alignBottom="@+id/btnUbicacion"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por Lotes"
+        android:id="@+id/btnPorLotes"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/btnUbicacion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revisión"
+        android:id="@+id/btnRevision"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_below="@+id/btnPorLotes"
+        android:layout_alignEnd="@+id/btnPorLotes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar Archivo"
+        android:id="@+id/btnBorrarArchivo"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_below="@+id/btnRevision"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Cantidad"
+        android:id="@+id/btnCantidadFisica"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btnPorBarrido" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar Registro"
+        android:id="@+id/button7"
+        android:height="80dp"
+        android:width="170dp"
+        android:layout_below="@+id/btnCantidadFisica"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

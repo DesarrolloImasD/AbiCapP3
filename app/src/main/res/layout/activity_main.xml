@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.camilodesarrollo.abicap.com.example.rene.abicap.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/antalisabitek"
+        android:maxHeight="500dp"
+        android:src="@drawable/antalisabitek" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCargarMaestro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="Cargar Maestro  Inv QAD"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnImprimir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Opciones Imprimir"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnAuditoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="INVENTARIO QAD"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnGenerarArchivoAuditoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Generar Archivo Toma  Inventario"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnAbrirConf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="CONFIGURACIONES"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnPorBarrido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:elevation="24dp"
+                android:text="Por Barrido"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnPorLotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="Por Lotes"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnRevision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Revisión"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <!--<Button
+                android:id="@+id/btnConfigurarImpresora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnEditarCantidad"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="Configurar Impresora"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+                -->
+
+            <Button
+                android:id="@+id/btnSalidaMercaderia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="Salida de Mercaderia"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnSalidaPorLote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Salida Por Lotes"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnCantidadFisica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="Editar Cantidad"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnBorrarRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Borrar Registro"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnNuevaUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="Ubicación"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnGenerarArchivoInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Generar Archivo Teorico QAD"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnBorrarInventarioMen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Borrar Inventario"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+
+            <Button
+                android:id="@+id/btnIngreoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:text="INGRESAR PRODUCTO"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnMiscelaneos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Miscelaneos"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnActivarLicencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnCantidadFisica"
+                android:layout_alignEnd="@+id/btnPorLotes"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:text="Activar Licencia"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tvNumeroSerial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:scrollbarStyle="insideOverlay"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:text="Versión Corrupac 1.0"
+                android:textColor="@android:color/darker_gray"
+                android:textColorLink="@android:color/transparent"
+                android:textStyle="bold|italic" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

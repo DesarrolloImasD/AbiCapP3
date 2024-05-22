@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.camilodesarrollo.abicap.com.example.rene.abicap.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnConfigurarImpresora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:elevation="24dp"
+                android:text="Configurar Impresora"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnEtiquetadoInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:elevation="24dp"
+                android:text="Etiquetado inicial"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnReetiquetar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonazul"
+                android:elevation="24dp"
+                android:text="Re-Imprimir Etiqueta"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btnImprimirUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:width="150dp"
+                android:height="80dp"
+                android:background="@drawable/botonrosado"
+                android:elevation="24dp"
+                android:text="Imprimir Ubicacion"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnMenuPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/botonazul"
+        android:text="Menu"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

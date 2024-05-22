@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.camilodesarrollo.abicap">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/paperman"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.rene.abicap.Splash"
+            android:theme="@style/splash"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rene.abicap.MainActivity"
+            android:configChanges="orientation"
+            android:label="AbiCap"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Barrido"
+            android:configChanges="orientation"
+            android:label="Barrido"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Ubicacion"
+            android:configChanges="orientation"
+            android:label="Cambiar Ubicación"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.LecturaBarrido"
+            android:configChanges="orientation"
+            android:label="Barrido"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.TotalUbicacion"
+            android:configChanges="orientation"
+            android:label="Informe Ubicación"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.LecturaLoteo"
+            android:configChanges="orientation"
+            android:label="Loteo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Revision"
+            android:configChanges="orientation"
+            android:label="Revisión"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.SalidaMercaderia"
+            android:configChanges="orientation"
+            android:label="Salida de Mercaderia"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.SalidaMercaderiaPorLote"
+            android:configChanges="orientation"
+            android:label="Salida por lotes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.CargaMaestro"
+            android:configChanges="orientation"
+            android:label="Cargar Maestro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Login"
+            android:configChanges="orientation"
+            android:label="Acceso"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.BorrarRegistro"
+            android:configChanges="orientation"
+            android:label="Borrar Registro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.BorrarInventario"
+            android:configChanges="orientation"
+            android:label="Borrar Inventario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.GenerarArchivo"
+            android:configChanges="orientation"
+            android:label="Generar Archivo Inventario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.EditarCantidad"
+            android:configChanges="orientation"
+            android:label="Editar Cantidad"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.ActivarAbiCap"
+            android:configChanges="orientation"
+            android:label="Activar Licencia"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Miscelaneos"
+            android:configChanges="orientation"
+            android:label="Miscelaneos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Ingresar_Producto"
+            android:configChanges="orientation"
+            android:label="Ingresar Productos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.ActOnline"
+            android:configChanges="orientation"
+            android:label="Activar Online"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.ActivarAbiCap_Manual"
+            android:configChanges="orientation"
+            android:label="Activar Manual"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.ReImprimirEtiqueta"
+            android:configChanges="orientation"
+            android:label="Re-Imprimir Etiqueta"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name="com.example.rene.abicap.ConfigurarImpresora"
+            android:configChanges="orientation"
+            android:label="Configurar Impresora"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.OpcionesImprimir"
+            android:configChanges="orientation"
+            android:label="Opciones de Imprimir"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.EtiquetadoInicial"
+            android:configChanges="orientation"
+            android:label="Etiquetado Inicial"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.ImprimirUbicacion"
+            android:configChanges="orientation"
+            android:label="Imprimir Ubicación"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.Auditoria"
+            android:configChanges="orientation"
+            android:label="Inventario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.example.rene.abicap.GenerarArchivoAuditoria"
+            android:configChanges="orientation"
+            android:label="Generar Archivo Auditoria"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+    </application>
+</manifest>
